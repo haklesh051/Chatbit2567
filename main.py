@@ -3,11 +3,11 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # Environment variables se read karo
-SESSION_STRING = os.getenv("SESSION_STRING")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 API_ID = int(os.getenv("API_ID"))
 API_HASH = os.getenv("API_HASH")
 
-app = Client("KhatarnaakBot", session_string=SESSION_STRING, api_id=API_ID, api_hash=API_HASH)
+app = Client("KhatarnaakBot", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
 
 
 # Register plugin handlers
